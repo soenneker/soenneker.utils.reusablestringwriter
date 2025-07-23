@@ -3,7 +3,7 @@
 [![](https://img.shields.io/nuget/dt/soenneker.utils.reusablestringwriter.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.utils.reusablestringwriter/)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Utils.ReusableStringWriter
-### A high-performance, reusable StringWriter that avoids unnecessary allocationsby clearing and reusing its internal StringBuilder instance.
+### A high-performance, reusable StringWriter that avoids unnecessary allocations by clearing and reusing its internal StringBuilder instance.
 
 ## Installation
 
