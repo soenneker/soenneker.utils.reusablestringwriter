@@ -25,7 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Utils.ReusableStringWriter.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Utils.ReusableStringWriter\Soenneker.Utils.ReusableStringWriter.csproj" />
     </ItemGroup>
 
     <ItemGroup>
