@@ -1,11 +1,10 @@
-﻿using Xunit;
 
 namespace Soenneker.Utils.ReusableStringWriter.Tests;
 
 public sealed class ReusableStringWriterTests
 {
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
