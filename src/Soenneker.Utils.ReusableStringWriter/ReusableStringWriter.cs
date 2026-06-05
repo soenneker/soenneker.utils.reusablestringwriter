@@ -12,10 +12,6 @@ public sealed class ReusableStringWriter : StringWriter
 {
     private readonly StringBuilder _sb;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ReusableStringWriter"/> class
-    /// with an initial buffer size of 256 characters.
-    /// </summary>
     public ReusableStringWriter() : base(new StringBuilder(256))
     {
         _sb = GetStringBuilder();
