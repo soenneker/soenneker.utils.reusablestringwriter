@@ -4,10 +4,23 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.utils.reusablestringwriter/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.utils.reusablestringwriter/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Utils.ReusableStringWriter
-### A high-performance, reusable StringWriter that avoids unnecessary allocations by clearing and reusing its internal StringBuilder instance.
+A high-performance, reusable StringWriter that avoids unnecessary allocations by clearing and reusing its internal StringBuilder instance.
 
 ## Installation
 
-```
+```bash
 dotnet add package Soenneker.Utils.ReusableStringWriter
 ```
+
+## Quick start
+
+```csharp
+using Soenneker.Utils.ReusableStringWriter;
+```
+
+Create a `ReusableStringWriter` instance, then use the operation you need below.
+
+## Common operations
+
+- `Reset()` - Clears the internal buffer to prepare the writer for reuse.
+- `Finish()` - Returns the accumulated string and leaves the internal buffer intact.
