@@ -18,13 +18,13 @@ public sealed class ReusableStringWriter : StringWriter
     }
 
     /// <summary>
-    /// Clears the internal buffer to prepare the writer for reuse.
+    /// Clears the logical contents while retaining the internal buffer for reuse. Existing characters are not securely erased.
     /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void Reset() => _sb.Clear();
 
     /// <summary>
-    /// Returns the accumulated string and leaves the internal buffer intact.
+    /// Allocates and returns the accumulated string while leaving the internal buffer and logical contents intact.
     /// </summary>
     /// <returns>The current contents of the internal buffer as a <see cref="string"/>.</returns>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
